@@ -1,28 +1,20 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + HeroUI",
+  name: "TripD",
   description: "Make beautiful websites regardless of your design experience.",
   navItems: [
     {
-      label: "Home",
+      label: "หน้าหลัก",
       href: "/",
     },
     {
-      label: "Docs",
+      label: "ออกเดินทาง",
       href: "/docs",
     },
     {
-      label: "Pricing",
+      label: "ติดต่อเรา",
       href: "/pricing",
-    },
-    {
-      label: "Blog",
-      href: "/blog",
-    },
-    {
-      label: "About",
-      href: "/about",
     },
   ],
   navMenuItems: [

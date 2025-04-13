@@ -12,6 +12,7 @@ const config = {
       fontFamily: {
         sans: ["var(--font-sans)"],
         mono: ["var(--font-mono)"],
+        noto: ["var(--font-thai)"],
       },
     },
   },
