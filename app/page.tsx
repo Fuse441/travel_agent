@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 import { Chip } from "@heroui/chip";
 import { Image } from "@heroui/image";
@@ -20,14 +21,14 @@ export default function Home() {
     const fetchProvinces = async () => {
       try {
         const response = await fetch(
-          "https://raw.githubusercontent.com/kongvut/thai-province-data/master/api_province.json"
+          "https://raw.githubusercontent.com/kongvut/thai-province-data/master/api_province.json",
         );
         const data = await response.json();
         const provinceNames = data.map((item: any) => item.name_th); // ดึงชื่อจังหวัดภาษาไทย
 
         setProvince(provinceNames);
       } catch (error) {
-        console.error("Fetch error:", error);
+        // console.error("Fetch error:", error);
       }
     };
 
@@ -174,7 +175,7 @@ export default function Home() {
           </div>
 
           <h3 className="text-4xl ">ขอบคุณที่ไว้วางใจให้เราดูแลทริปของคุณ</h3>
-          <Image src="logo_location.png" width={150} height={150} />
+          <Image height={150} src="logo_location.png" width={150} />
         </div>
       </section>
       <Divider className="" />
