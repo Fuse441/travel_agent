@@ -1,0 +1,409 @@
+[
+    {
+        "address": "QF3R+7P8, Na Phra Lan Rd, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon, Krung Thep Maha Nakhon 10200, Thailand",
+        "location": {
+            "lat": 13.7531627,
+            "lng": 100.4918176
+        },
+        "name": "Na Phra Lan Tunnel Gate 1",
+        "photos": [
+            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AeeoHcIpFLOEsCq2x_wbldEyX0CL-CfA7lBv-5WVPrDYBcnZJo34TyE3uWdisw7cAy6XDxJ70VBPI2WvRcsJNxr57htYA5x2q8IYH9SoCGXDKmJ0JNEhZS6QlJVtzOugZBl2mDwT12HVNrTpiEogBEIy5P90RhyayWDd2sBpyPTjUaDtJl5f69F7ekVrKw9VmbfebJxmvlqV0Nv8q0EQ84Qkn7fB5S8uPhyfG1kvZz0fkMVqFdT-LD-LXGY_cm7uVXi9tvo4HTZlMzpdVyZnJjNgxDDbvPZReweNot-h4ABXfDgt49pQQlluPq13c8fwJgeZENY7LHiddC2_BF5tt0Czc3M1Qch31SW4Au0brAhWSDUOA2R5Z9AZ_hJux7c9mz8zimqrRJTHdI9EVS0z4yWspVH5-5huf5w0pVUznAL300FkhKJ407WBSfKUW6g3MhasTQvopZ2ILB-VLxOuEUt4xMY6eGr_3PuIy42N9TUOcce6j6GZYH1ENmgx-6IKOKtTzpu_xCa4jOHZV5MN_fzHWBogAUErqdgn4-zE_cNX6FVdfsyvDoR9YgrGY7-B0Bre8DDHm7ku&key=AIzaSyAqa_-IIG1SE7pPbsIbDtRNPqx-m2JM1oI"
+        ],
+        "place_id": "ChIJ-QKQOyqZ4jARoVb3D6UmIsg",
+        "rating": 4.8,
+        "recommended_age_group": "วัยรุ่น",
+        "review_count": 160,
+        "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "address": "QF2V+M34, Na Phra Lan Rd, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon, Krung Thep Maha Nakhon 10200, Thailand",
+        "location": {
+            "lat": 13.7516435,
+            "lng": 100.4927041
+        },
+        "name": "The Temple of the Emerald Buddha",
+        "photos": [
+            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AeeoHcKiZLKn6ehXrl0ls_Cq45GIcRhB9HLdttaM1i6y0H-BRdfG96pNbea3j5Tcr9mILwYqTiVxA1ObF5-s2m5HuwQ2yOJivrTGRXTSLLC2Kc3SjG2pI0O_ZokCUCZK31JsrZBVHUvNan_inUAXUzc8vNAC2l5Oe3ajJEgroZwqCpTWM_OBTKj5B8chePMRXOfKhBXHv_NKFr0E0CnG5HycNr8KFRgnTrqj8J_wrnX_q1pVmIRzElGQVUCHGWF1Sri5jtyQ_xNKU9m69l3PhtWHNTSbJr1iURjZEV2lyDr6IUJenfmhMmlD8Ih4xDLJwfaCYcaQz5S2oxeid0yC_eCy51jr5-591jBxhGv1QGP2AmuHHID0k1QqFOBG1MXVqMay0pDjS-NJ7mhlEwHL8G8-m9_DEXPefrGD9pyAqV7fh2bkZ3fCpFzi12JK6V8iw81xC29tZmp17i8ZswJB6Iq1f-qxq5sHdQrQeOla2gUJV-0ir8SMPwVmb_vXuWndG3rBmSQ88gKZUKWSdpN8uY0hN6aT6yJy9WG5Ix6UU5IR_uu1DsmX_HZ6OdOLwmaUiKnEp1ymVJvwRBBE3Q&key=AIzaSyAqa_-IIG1SE7pPbsIbDtRNPqx-m2JM1oI"
+        ],
+        "place_id": "ChIJ5Wl37g6Z4jARiP4itarBPDQ",
+        "rating": 4.7,
+        "recommended_age_group": "ผู้ใหญ่",
+        "review_count": 38011,
+        "types": [
+            "tourist_attraction",
+            "place_of_worship",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "address": "Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok 10200, Thailand",
+        "location": {
+            "lat": 13.7498558,
+            "lng": 100.4915765
+        },
+        "name": "The Grand Palace",
+        "photos": [
+            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AeeoHcLtgWzJzwjL_ghtevZQ5vshqi7o_tRZCoS995V70r4TcEK46jr6jQNRV75Xl-HDN_ivlP38flKJc_D2VQGOA8lIg8DccU37yN4u9dBMd4yWEn-vlw_wG_xUDhZWE6v1McnL8xyGZWMy_XCI4Xkab7UlVld21AJRwB4hpuoRxI6y0oKvUQUdEgmhYBgYS8-GdwG9-vk-A3QzPbatvakjMCf9cWHwBRL04T9A8lscyFPhzNhTLfVfQ51aKNBv5kcIsTjNOBZMDHAS6gL9HhaqJFZAzomsTs1WZf5WyQF1TBM0sNdlQsmY6OvhOxplXJBF8LOtci5CGaj1cDysq2JYFdKI23FuRCKt01-eIXu4v220_MxiByPgpyjTvXR0CNC354IsfwGEP4yShDHCC7v4LWwuYHOrn0ivFsk4wQiwajM61VnXHJTxNa5pS9mxrm-5Rsn2Lu_hqHwPhiee1K_GuxhjUGddqsEfae3EQM6Kg7zkSxdQgbgXws1dndBdvZoYrghdsw2jKAr7j9ITSGY1x6YT2WuXPKpKqtUEOmOaD5yC4hGuS1j5im_hVvgGvL39gJaoZQ&key=AIzaSyAqa_-IIG1SE7pPbsIbDtRNPqx-m2JM1oI"
+        ],
+        "place_id": "ChIJPzZsMU6Z4jARQUzvk913bCo",
+        "rating": 4.6,
+        "recommended_age_group": "ผู้ใหญ่",
+        "review_count": 68090,
+        "types": [
+            "tourist_attraction",
+            "park",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "address": "พระที่นั่งบรมพิมาน Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon, Krung Thep Maha Nakhon 10200, Thailand",
+        "location": {
+            "lat": 13.7504504,
+            "lng": 100.4930537
+        },
+        "name": "Royal Hall of Boromphiman",
+        "photos": [
+            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AeeoHcKKGBUgJr1vyst4sqHV6Jic0kp8BS4fwUmRGNjcoIBj4LvLGv3AFSkzogX0RoA9G7vm5TYKRgmrrltP3G001AulUW8_rs0YMuXXCeLzxJrap0r7pA6k4FMpjDRwvQS8hUvHKMEcDb1Cp0BHob_cJpRCdqMgiPhRlC5jVAziHbETK9HxhcYO7brHLOguTmPiTH-OohS8EM7HwPc1ZoiQj2lOqIUGFPr8_3uIsfRBUfHsAVIXX5jm8gSUWZ6Qke-cEPc_l9W9NYbjmq80uVexbog7W0rTQQsx6hwh2WRv383Lhmhz_TlTpy3W2WQoMiZyMQgm3TM2AgaMShYAhdhj6-IhFd9zQOscZ_CT6UR_CeSBdseSHPzcLyiQMBR1gITuwnPaqtp0x8WSn4rhNiqddRJuJJAi9HByG4zxdNsrhn-cBiCCatoP7g6tCSTA4eWFy7jRUWrVLASEeB3II4hr7ecAVPWp4hk2VKJuxqzxUJycjKDwvSvQupXO1LG5wKiZU2bvnH612rKkOCffgDtVOOIVx73TE37YZn0KZAR2o3qPwa_CPoPCTjkDvCzgGB60PxrYBoW6CW2PUg&key=AIzaSyAqa_-IIG1SE7pPbsIbDtRNPqx-m2JM1oI"
+        ],
+        "place_id": "ChIJ44vx_w6Z4jARq0ertA38M0k",
+        "rating": 4.6,
+        "recommended_age_group": "วัยรุ่น",
+        "review_count": 59,
+        "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "address": "239 Dinso Rd, Khwaeng Bang Khun Phrom, Khet Phra Nakhon, Krung Thep Maha Nakhon 10200, Thailand",
+        "location": {
+            "lat": 13.7518078,
+            "lng": 100.5012832
+        },
+        "name": "Sao Chingcha (Giant Swing)",
+        "photos": [
+            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AeeoHcJPPLhTciBjqh8SJaCcFDIKNYhhL0Wm8RwgdIfs-JkWl851zp5NdbEtC8aPUSKYI2aH3IOnYnjf3a_i052xtG0SPsJ4dSbw1dQOtlyeBmkVvzgg4DPoh04Z3y07C9iryAs3mpFyzMLFk59XSj1tOtAPUaxbPSHuG39vtR3rbFxq7ieCO0wGnRpBTO7ZDKJDnEMZngrxphDGBPyRBZ8Jq18qFBcs_lHprf95MJO6GPCNp2vW0_ZORZaboSa5t4AXg4P7-QgkhF3suLKx5MAY8X9_oCusXSgHDylZ3RfLSXvDQWH-jGKkhUz0BYTk7hw8qCihxq5ijTqvfeeFEF9e4M97B4ME3pIvE0mDqgcbMXjH6-yYxdWpcw0DXR9uOnrN41yAkYYqrgWH0it2NhuMB88DgcarajruY44rvI5NW3FnNeLLdMdyCa4mQ1_SoJ-AoEp3RHS2zRBPBdTUamRwEy87pyKeIbQ8RQETwWiii694f28LKWsehCh9yaz_9-p3OCINncmUltTjLO-3M0LUBwCmt3TiomhEz3CSAiRvVcu3cOd3_83HTgez-S9ZEEQQsqtpY_P8IHJouQ&key=AIzaSyAqa_-IIG1SE7pPbsIbDtRNPqx-m2JM1oI"
+        ],
+        "place_id": "ChIJX49VWsWZ4jARwEYBM0MDXnE",
+        "rating": 4.6,
+        "recommended_age_group": "ผู้ใหญ่",
+        "review_count": 2750,
+        "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "address": "PFXR+XJ5, Phra Borom Maha Ratchawang, Phra Nakhon, Bangkok 10200, Thailand",
+        "location": {
+            "lat": 13.749895,
+            "lng": 100.4916034
+        },
+        "name": "Grand Palace",
+        "photos": [
+            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AeeoHcIK8et91PjHtYb0rrK-IA2PYz16D8srPgxFp8343JPTklFmua_goq45V-Ilsqs-D5IuFOp5VyIa8U2kKEN-RhLMLRLlsXSGFSF-b31iSovR6tHy1JSFEjW13tbNHg67eNHzl1NymZ0SUlHvfCzsNED1Z5tGinx2aSPqT9fbNfbi_KvCobhZ_C9g2wHCjm_FOr4G4N0cWdIAXaW4UwDRZxTSSjqTPFrq5nXzGaQ8B9kY9kqxzVZwdecGr-UcNWVetqcsJc4HENsCNf7_2I0VfnHDGwBZKdYO6zXrjL7ZhuIvr1bKL9k30bUv9r5IgmQDzlHtIZdnHhWJUjI75pIOgNIk2f6mErvJFUTUSQBcFVXYpNIjscYIQlEvbvX79qcHeBDw0S95OfQw_Q3LJSuFbA48pDVIRa1Li7j_9Ke0q1TBUCEUovQqnBzH33cL_DxMx6wjh13sbltXT8fUwYUtmnWIQ1m76l_Kfgpu2v4HK3-0dtyQPO9XKolRfN_ZZGsygv-9Q4iD7Hc9ZL6Us7CJ4p217F2j5TUIV0A941oMHE9xcU9fZPdKb5OQFwmqsxWXoNoaZMVbN9iPCpUjUy1pl9PlSC-h4g&key=AIzaSyAqa_-IIG1SE7pPbsIbDtRNPqx-m2JM1oI"
+        ],
+        "place_id": "ChIJnbq5Mp6Z4jARtwl7TH2TrXE",
+        "rating": 4.6,
+        "recommended_age_group": "ผู้ใหญ่",
+        "review_count": 68,
+        "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "address": "273 Soi Saphan Yao, Khwaeng Si Phraya, Khet Bang Rak, Krung Thep Maha Nakhon 10500, Thailand",
+        "location": {
+            "lat": 13.7281433,
+            "lng": 100.5182074
+        },
+        "name": "Bangkokian Museum",
+        "photos": [
+            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AeeoHcJIv4T4pjVWs1zRbG-DCV-CLYdtfYJVFK9jBg2278Fp0_yC3GTw6R1c38Bf997pUYfBug3dlkNYEC7s8_mwGyrRQ3vdCvqn2fgw3OM2PZ_RzM6Wc4d3WP7iic9SDaL6Eml4NTRgE2QjneEhsFoXpulH-rf4s0uXegIf1GBHw_rzPx-0Cyi414O6vYQIr2gVhsikbIrObTa_1LsMwAvHGhD3R5YbiC5j8_FuMJUOy5QZckaLERFr6xlRFprmsVEGUjT3RBXc-aXSDe6qNsNJfq9569yTbAdtyD-_O7n35yI5Cb8003ys19I6pepK7P3Cf8cNwd48MKZYZAJfu8MOPmjr1v1uNtWOBpGpbjtm5SEf5niE5ZDohHSQ9QlW3Ap-_ufjLGxQTTuQ9L01SX3B3TQSL3mgvjvlBq1_ZRXoz15GH45ZbRpYpHcpmKcXU5A_Fqhy9tMPxt9-4oQtZdBNjaLWX9VDpleeEF0rjlL1G0WTxk1IaTjCHefdrH2H59GKry-D-O5CJoeTGwcaFcbi8aWnVcdyDpLep2PfobvGV48f1sK9b1lZxvaOsFb4qSd6fG83ednQuunFOQ&key=AIzaSyAqa_-IIG1SE7pPbsIbDtRNPqx-m2JM1oI"
+        ],
+        "place_id": "ChIJR899CdqY4jAR9k0sJXIVHC4",
+        "rating": 4.6,
+        "recommended_age_group": "เด็ก",
+        "review_count": 1165,
+        "types": [
+            "tourist_attraction",
+            "museum",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "address": "200 Thanon Maha Rat, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon, Krung Thep Maha Nakhon 10200, Thailand",
+        "location": {
+            "lat": 13.7500614,
+            "lng": 100.4912847
+        },
+        "name": "Chakri Maha Prasat Throne Hall",
+        "photos": [
+            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AeeoHcJAwovYyFKMAJ_EPv-gECl5eGMFBScIqe-YsLbEihy1_lyg47Eh7pfaDHzvcMdIo-_Nuv2ID3xBVHxVWMXaSOk3M_awx2Z_MR4XWhkV8Ggh6g4ZOO_7SQ3FHcbBKLGRdBMRgkEjVasy13rULPPwJQEdY5cvqaU49Utpd0E0DXtjGzgqewWvw1brYzA94j2qNiaZ0qqjtwh8uxA-okO0m1s273JEu4a4HISMF_iEm01fOY9nazblbfLOTccYsyO4HSAXQV7AAAX1L_CPYhAMHZsT_-xnldMqSgzqBhdZADPxFaM5lcLIaqWM2ztxMSsW8XizPmMmBLC1ql-eT1JZVWIitgFU5V2IX_tJh3yAd5FsyopqjOSdsXC_me8FIKXXrIvCL3GQP32JWazieeXjd9dxc0ReX4jB0Nu4pVL_xORFj_lJzZci394zD8qrAbuBgEwIulG9e1HvMJjlijWrFWP7l5KmyySvoO5birGVVruZkZrO8BIIxx0943UTmd2QiBCYgt874MGYPNdMjZ_PIL8uZ6M70UBEnVZa_hT3khl9uc6zGP4nwT6e7dOD1zT_XmVlpQ&key=AIzaSyAqa_-IIG1SE7pPbsIbDtRNPqx-m2JM1oI"
+        ],
+        "place_id": "ChIJNfNuJA-Z4jARGLI_yKuNzYs",
+        "rating": 4.6,
+        "recommended_age_group": "ผู้ใหญ่",
+        "review_count": 242,
+        "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "address": "4 Thanon Sanam Chai, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon, Krung Thep Maha Nakhon 10200, Thailand",
+        "location": {
+            "lat": 13.744147,
+            "lng": 100.494137
+        },
+        "name": "Museum Siam",
+        "photos": [
+            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AeeoHcJkmx2h35bSl8VZYj7Odj85w6XZGosLOIEm6lxymRdmtgD0CPEqt6f3KDH7HQh5Yvl6AEvk3Zxcw2De7ONIwFZ2zF8pm5XKpVGNhehRuJykkf6ncbzhrmh9UBVpz0uuqntQYFCkcMz6HjdB9aw-2x6IQYAGYmjpFxyx_j2wRNiF8r-8FhVFtrycCkwVPCVBT4Xxjnt37o0mKhCUcLb2-UOXTwkEYNS_dgoojhxk5o64atMFpQxRBwDAM43uw-IjK-DmgyuAdwY664J9OHOMXylziR2QQbcYn2WR0Zd3ALIMtZTZTbU&key=AIzaSyAqa_-IIG1SE7pPbsIbDtRNPqx-m2JM1oI"
+        ],
+        "place_id": "ChIJu2YM5gSZ4jARoL7Fey_yXy0",
+        "rating": 4.5,
+        "recommended_age_group": "เด็ก",
+        "review_count": 7222,
+        "types": [
+            "museum",
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "address": "ชั้น บี1-บี2 สยามพารากอน 991 Rama I Rd, Khwaeng Pathum Wan, Pathum Wan, Krung Thep Maha Nakhon 10330, Thailand",
+        "location": {
+            "lat": 13.7459351,
+            "lng": 100.5352057
+        },
+        "name": "SEA LIFE Bangkok Ocean World",
+        "photos": [
+            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AeeoHcJJk0CQiBU2rIuJ06JC-EybFeBlH-LVdUWhOcAwB5zOoL3_7TIRpv__eCr4eNRB-MHVXTYREbuTyr_FYN8jExLWZ0YCe72sjpaeFJwJEU1LmKHNM8s0OP6haNQ3YlkIYzgHbUpsKs4ZduqqPfvrCbY-pkyPeYBjJDHswo454TOUOFvVD2vEHiKa1uL73-CJqSQcRHW65mhI6b4VxTaa1ymwDe-PDscPlP6xaUrGYGX1NjN9k5lhu3-UmdYpzW5yHMi3Vpw6ojlWNGkEOgMx02wqD14-YGtZit-zkX5ajDUrnPEhntNKvwAf5WsS9k7KAYiI30hHBKASeDM0W6Uhatnd71L-mc5B3wzkLsRkM0kPutAO1qNCBiBeY7ERuYG-FmogOwqMLwoMoNPLgAVYZ3D3cJwTS_nPzCTO8mlCNR7CWiCJ3FTIDQIJIP-GgQUe2OS9WJlYM3jr9aI2u0loKBjeolB-Q75p4mc7WeyFZruXRcRFrbi5m-SfcYxUjv2XiVMwz7FGaue4oPYy4Kd-rb69qgZORNgUtu7osK3g5DUkjkUiEqvyYB47GNCqOL-x5W6MP2cz&key=AIzaSyAqa_-IIG1SE7pPbsIbDtRNPqx-m2JM1oI"
+        ],
+        "place_id": "ChIJH4I85c2e4jARUMYLeiqfBd0",
+        "rating": 4.5,
+        "recommended_age_group": "เด็ก",
+        "review_count": 23803,
+        "types": [
+            "aquarium",
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "address": "203 Thanon Suan Sayam, คันนายาว Khet Khan Na Yao, Krung Thep Maha Nakhon 10230, Thailand",
+        "location": {
+            "lat": 13.8053114,
+            "lng": 100.6923497
+        },
+        "name": "Bangkok World",
+        "photos": [
+            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AeeoHcL3tFroTkJm0viKdwsb--azYda5DW48xXq3RePuqprwPHZ50qJr857KmGu2zUMZG32jpoukQw_Fc0lK7w_EglbHicy-0JL4HVNRUpXd32vkel484fi5Je6JDL0VOYbtj6rCFPoMjHCHZWHy5VpqZQ_ExBDZxk9NTiK4k270mxh0BhQ4BOYjpTfGEuIbtoBiNSPZrE5fwWlawXIm1jY-SIF_0Y0AKRHxXZn6W2nEVZ-Vvv8HTNLMEmwURE44mYvs5lpgS1F8RIghrzB54zBdX9C5FY-6dIFuYnQwYxbBR-vS1NljI-WAGfwjJ9p5Gxzspe4T7SyNpPRDP8xdMc6rxKWuDnlAk4swcTIVwPwahSdm42vU8rUa13koj8qn1XRHHL_uuRhjCSFKkuRB36gpK1jYR6Vw_L61wU4DZQRfSuT5YpBYMFxi88uHfQNB11ACEapTA3Spc5E-2l3cPJtENrjSA44TkE2uDoqRNs1DJCmSEWNDR09iyAu3IAd_fzH5grIoNiTSWrtru05zn6xkJrgtceEuJb2m7AHYuuCk4UXjtlbT6nMnczyZWNWvL4dHv1NOkjz9&key=AIzaSyAqa_-IIG1SE7pPbsIbDtRNPqx-m2JM1oI"
+        ],
+        "place_id": "ChIJcebuTx5jHTERPpA79qxC77Y",
+        "rating": 4.5,
+        "recommended_age_group": "วัยรุ่น",
+        "review_count": 358,
+        "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "address": "2194 ถ. เจริญกรุง Khwaeng Wat Phraya Krai, Khet Bang Kho Laem, Krung Thep Maha Nakhon 10120, Thailand",
+        "location": {
+            "lat": 13.7052689,
+            "lng": 100.5031826
+        },
+        "name": "Asiatique Sky",
+        "photos": [
+            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AeeoHcIZrbITJhtDJjAj58tTlsMFXR6ebXR9pBXiUfq5bEWYesb_3yKtopQHQyKavkvQW4OqOqMandp47GSq4yhf6dFCyrNy3CFmT8_fN1Rpa6s9xXEgONn0rGU9JBIPKbuEsq6T9zRajjjJIlWWhclR0MNebR3m_CqdKLw928vQ4xxX8TT2bu9_3SdLx9A4epN_RAO1vlGu7lDO8LSDgR97YVAHNV05uIwWXmwWHk61NRdlM44mAoqCA9DJdTxOzF0HSs1FsTcAZFvmvzt0rTKfwU3aWD2PzPRpFd5il6Pov2yJN61ZaNoVq5cwQjepTYivr-DZB_1qKE03MivT87h_n5B9AzXb3OhbsVN84Q81LWz2434Ku-3Yo6Q-TYXpPlEj8tqLu3udFFutQ8QtMZ-Bw8wLrlaPIxgiN0Vt5npmqtumqPMQwWbncwp1ULEZj8v-B4fC9OL5qTq3YCwdcQ4Ph6-vJ3bT6ESUpg9JqfuxVPKodYQy1n83saqrIAWye3nyPxH26deexxvbm1f97D3jax3rqqdKu0nOVThctxcZq8NxMFlzLl-qFd5Pf_zL-RjxVe1lrCeY&key=AIzaSyAqa_-IIG1SE7pPbsIbDtRNPqx-m2JM1oI"
+        ],
+        "place_id": "ChIJU9Py5ZaY4jARtPRPFWYj6vE",
+        "rating": 4.5,
+        "recommended_age_group": "วัยรุ่น",
+        "review_count": 2088,
+        "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "address": "22 ถ. เจริญกรุง Khwaeng Talat Noi, Khet Samphanthawong, Krung Thep Maha Nakhon 10100, Thailand",
+        "location": {
+            "lat": 13.7340836,
+            "lng": 100.5121079
+        },
+        "name": "Talat Noi",
+        "photos": [
+            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AeeoHcJNUvS7ZxNAFbulU1OEmeV4kBcYbQbWSyd0Xtzv6W27b_59p5kUvl5kV5oMBdymryqLRPFm7UUFdmz-LcoIYiStILdAZx0DRyhddKwNOKrB6pOas5zWF5JvuHmrJNt8YcpCv5iuHOy9YvUmIxnay1jFvhf3LIs4tnlhG8rPb6NLS7a9OrASWPrIjxbOUHHByhko7EBTlar-dco5YF_uz12nMzYpj2LhbwaW9Sp8stccWE0k6JF-bZaHtcZwtHFfvenxgkK6fPE4zItySUmpG11cuO16I-sOZ09yfZe9zqgS5jgflljPfJ3FkJZqrlAiDtOE_sLCwAtsFWIqQdGl8Jqu6gsFitTVeTBHNwNrjHD6yIhC4gVcTPsuuTbzSS22FGbPw6V5x58Hm1Of_qJX1Pz8byWaxrUqoIP7rGYqQ5QjvzwMqVQ0MTDEsbOZB8jdYYyx_6G65Ijeg1bR_ktBhgaa0Zgqaxbv5MDmAzUm8CKCUNcMmcPPAn4XGWx_WwRhxiFatWB7FpTCr8oR61JgI8FYZdotn7LRmm997qTgdj_jzUqzJYY7cjaX4tx79NF8aFYf9BeQ&key=AIzaSyAqa_-IIG1SE7pPbsIbDtRNPqx-m2JM1oI"
+        ],
+        "place_id": "ChIJS7pg-tiY4jARZz6TpYihORk",
+        "rating": 4.5,
+        "recommended_age_group": "วัยรุ่น",
+        "review_count": 1474,
+        "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "address": "200 Thanon Maha Rat, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon, Krung Thep Maha Nakhon 10200, Thailand",
+        "location": {
+            "lat": 13.7497432,
+            "lng": 100.4905577
+        },
+        "name": "Royal Hall of Piman Rattaya",
+        "photos": [
+            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AeeoHcKIQJ4EPmzAOp65pUXgISB4u7k_tGbMUaNs8n9OreQfFnik_9iBnEF2boUhReklb47XXlClUPE7lDjJhFoOxI94MYwNIO_3DX0VqEJa3DQK96PiEA-601sllJVKWCSNrIFF8lMICMSGb512ke-lRvTCW4iJfwRoAKKORG6CtOmkSbiCFGUdEAuUq91QSCSliC3QkOyJ3rtYnd4ksGfoQhHm1MkveTf9_W4FQ3uxg0RzoPQFMJBVbtpg9hpMELtG6d4ZJcXE5SDi1KseZczFPLiPJhjeqDyPt4f-RBi324pxY-Mixpre8775HOplejUSqlPWqOxy164cCD1fYvVtMtRZv32gT-GnfzDc_44WMVi6IVi5zuB2yiTQ_79f4p_E3-AwrV-gWyAxhZgNC0MDz288XVd8LiKkBxRuJJEXSwEJ8VwiWzqEEdq8lSxqDBuz60hopA948QBH0INBOj3F6LjtHogQjG-J-g7m0QWfHI9eGyzxuH5NxzqWXM3F9HfYUSPDAJFD0ihUmgcmWbxNEiSTa9R2Uq9epHoZvx2pvynV_6bTMCd5ToiBn0pszqNGqM3Ap8heksD66A&key=AIzaSyAqa_-IIG1SE7pPbsIbDtRNPqx-m2JM1oI"
+        ],
+        "place_id": "ChIJbRbSMw-Z4jAR1vMIgr-3GJY",
+        "rating": 4.4,
+        "recommended_age_group": "วัยรุ่น",
+        "review_count": 34,
+        "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "address": "89 Thanon Maha Rat, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon, Krung Thep Maha Nakhon 10200, Thailand",
+        "location": {
+            "lat": 13.7448659,
+            "lng": 100.4909543
+        },
+        "name": "Wat Arun Viewing Point",
+        "photos": [
+            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AeeoHcLjvohB9M0MWREmyNDe1G6MMnjdCGTx9uU9OgT-aKN1dMCL_BDeCEDYXweD63gwxujpcoYwClWYDcD-BTVBFxCoC_8eWzITULSjYRZujWF-9PrJ_gBMJHGXnRVpE0MhavPJmOqzq7mnEJkVsTqi3AN44swt7i8likr_Wd3mTHHYslPmNTCIfyhGZ428MXUGCu-fNz2bStoiGboIirruBClnafOlLxxVYHn0TogHOvS7WkbFlzgSSh0jElYRAcYVM7mUKNXBJ43d3Fk5rbPbztNpNLwoknQKbf2HOTQSIq54LiOS6EYMQbiyULDOY_U_PeRf0CPKSM4NY5nx3T3tdVmJcFwuO7vJOkMqNjmfHbx64xsBQDAMDmCLkB1LAxquMQkw8KSey8shPo2I8ZjzJAB3C0S7cQR8V-MF-rgID_cnHp3SvtFwZEiFMUC_NJup6D1jjEH4wMDoDVR2Ti1BCGLco-Tnowc-UcYRQ1jjRWjI6vE3o7ptMNuqkXsse7xGNeYF2V_bu_Ogueld_zT4sMlyF-Ba5uk_1BvNNh4eUiq7tfivV55ctsnc1BNq3q1u6uqF0PRClqt-Ww&key=AIzaSyAqa_-IIG1SE7pPbsIbDtRNPqx-m2JM1oI"
+        ],
+        "place_id": "ChIJq6BkoviZ4jARz5h-IvOGsGw",
+        "rating": 4.4,
+        "recommended_age_group": "ผู้ใหญ่",
+        "review_count": 194,
+        "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "address": "QF7W+H7W, Thanon Phra Athit, Khwaeng Chana Songkhram, Khet Phra Nakhon, Krung Thep Maha Nakhon 10200, Thailand",
+        "location": {
+            "lat": 13.7639776,
+            "lng": 100.4956975
+        },
+        "name": "Phra Sumen Fort",
+        "photos": [
+            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AeeoHcLg37huUNCVNbdSEAcUXbxznD4BQLHdoxtXVBjOS7LsaAB6C2AA-yDrfCZ-WnZSKOXzNiNk6bCdnoGUrLZLH-HdzOcftJA3dGCQPTVDOOAAQzdXt2cp0svVUs6g00tkvWdG7T9aSZhIWcW8llQpT8meDvHKSLiUULslEGHr6cods6pCw0sRZZXT30GXnVatn7ZbMy_4cdJFBdFN8x-Nz3nq4OVZpbtmenbEB7ZzRHpW23QINDYkZIeVXYPMXVgPgqgojuhrdXfBhs4iJtr7cAU7_9uAs_cypNvR3HgXriynGMo6O58SRguU24xxoouF_HFFHApyfsTP0bZTPzu56RRYl9aq94lYdy57NvbKc1rci7FvpYt4vWUVn33CXp-vMPtX6MoY-lRuuIWDb-Kw66L0cr6lseBDEM8wph4sILJStGXQ8sHpaQ2gDSwUfTL-rFOZbcYS2xTGGe-Uv2Xzdv_6A_JrDVJ29lJlqSwrxOHkJ5mEbWfhSVQJlCO-BFwTqZjruYYMMzdZiPUSl7im0M4HKuBgqf3N53ci2yspfz8TwtAF0Z2oL-IGR59N_LT0IjU8Cop2Y0PKUQ&key=AIzaSyAqa_-IIG1SE7pPbsIbDtRNPqx-m2JM1oI"
+        ],
+        "place_id": "ChIJb_OyCXKZ4jARN3QMU-Tnx8I",
+        "rating": 4.4,
+        "recommended_age_group": "ผู้ใหญ่",
+        "review_count": 2429,
+        "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "address": "Thailand, Bangkok, Khlong San, Bangkok, 6th Floor",
+        "location": {
+            "lat": 13.7262796,
+            "lng": 100.5101663
+        },
+        "name": "Alangkarn Waterfall",
+        "photos": [
+            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AeeoHcJi0a2Mh0RZ7k-ZMD4gdvefbAnCYHo43HM40WiJm_GlJfSW6-mMjyKl8ruKFJIIBeOUOohn-2yhbuZmXneeLSJJROdVaF4zQR-AT--GvozkyRCQMDt7zeEPioNWiJv2gpzdUPa7hYGcastfaSNQtu3lVl3ujsKOncAM6JKaGUdShnQvP21RGHkUllDwgxccfopRUJ3RfFU16ySEV3Xk8nrxs9awXHOyxxVNGGhfQF_rbpd4wI3bv5VCk0g8rr0PYWlR-EGYtsIw768qjIn6BEJZpXEqlqMY7neY2C-L2vLgxmBS91cxkamk18fMAv7wdiyIo5GEnGCnc1d4DxL5KxuXbzUG-VkbNqQrEnQ5NpwJpoLh6HVtPQfDXSB5Ea_4fqEiRzfbM2xH1RY0tySGjBxNRJXMTtZq2RPxFcr1RboMaGsQbthqcHkraJYnKsmYUUfRSQCwnh1YCC2fTbOwNlah7713mmIK9kFTmDrzcuXZ-hE2Bpw3fptKfL_ngqryjQ805kZ-cyxfREZZPp53rRpWP-R-W4xVPhLk7wJxRp4h8BypIHT7-8BmLhnETsg8dZGW3hyu&key=AIzaSyAqa_-IIG1SE7pPbsIbDtRNPqx-m2JM1oI"
+        ],
+        "place_id": "ChIJHW6dszGZ4jARrlu3vwjN0C0",
+        "rating": 4.4,
+        "recommended_age_group": "วัยรุ่น",
+        "review_count": 83,
+        "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "address": "PFXW+763 Between the intersection of New Road and Rajini ถ. เจริญกรุง Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon, Krung Thep Maha Nakhon 10200, Thailand",
+        "location": {
+            "lat": 13.7481302,
+            "lng": 100.4955593
+        },
+        "name": "Saranrom Park",
+        "photos": [
+            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AeeoHcLxnFDy6SD0Dj4_pPcepizuFzzDy4vMfyWdNB1IZkmMHFBrkViw0IJpSFhfYKEdXOwcFHvP1ybw9g3HAHAapyaMIMSs2NTIQ9mXA7mnpEFlJsWrwAu0A8gOp2HX8_JhN8UpZ3BpZaVckSZjALt3mz84cB6bcWPNETKKPUxG5cCLurVk6Q0Y1I3sT9a6swgx88PLmqjc0zoO9_sBapfsgW-CtdPPa15hzR4POGNg65T3hmAKV_aL5g5eIClfCnia1DL5rmoYXwfhRiAlzs5iV4UFdiWM2i6FwSJZLLGSXFryRZyZA-qAylb0W5KkJbyxnLmrYm9W9M2pwigniSndZ6lzUPZpg1jH7OLpkHHie_bNr1Jb_cu4B_ysC_S7jgov-k1sN9w3FWJsi01B6DJWfVCY9sERa5Xm7N4Wrl-nQFBRhI9uDGoCUZEIsRaQ-HLBWQoMdlIHYLWcm-w87LR08giXStYTvrjXzLaRAzj82MsjTRjtNpvrB9DJRm2wd5AUxvHOSn4F9GyHoNAeNMm55NupI1hD19naeoA6K-SN2CGx10so7ynu0ekjyyGwpcQHIJknC5bHjqo3Bw&key=AIzaSyAqa_-IIG1SE7pPbsIbDtRNPqx-m2JM1oI"
+        ],
+        "place_id": "ChIJ29xTHBCZ4jARW6fp8aK8I-Q",
+        "rating": 4.4,
+        "recommended_age_group": "ผู้ใหญ่",
+        "review_count": 2657,
+        "types": [
+            "tourist_attraction",
+            "park",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "address": "248 Soi Chiang Mai, Khwaeng Khlong San, Khet Khlong San, Krung Thep Maha Nakhon 10600, Thailand",
+        "location": {
+            "lat": 13.7343611,
+            "lng": 100.5076162
+        },
+        "name": "Lhong 1919",
+        "photos": [
+            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AeeoHcK5yOUW-F4LOCw2qCp-7wwZWAgaZchTXiGv1MNJc0j0X9YkE3kjC_smcWKIKKHyqIIGa1dI0PA4tmkFj8bKe6xuwzxL3dblbABpNIL29cD9R2QZaBp1vhXDKDU6oSRM0V3Zbib4IkhOLXNAdaU2G5ctuaMCWe_ADhN73cMB4C2MdDVA5e5CXTFNXdoNUMoAxbJ_oE7A9X910Msji424dZhYpWJZRbknrfyWFiHVu9TNUzsTTPBeYAlWGL0rbgdmiFZufSTk_zOaDaXGZz5n-L-CuIcnL2rc3anANkI7NcTxnzXJzIP5Qn0xU2k3PxTwSR36Xja7R4NLXQTQsHIh_ZB9hwpBxvqHL6CzSChEq6rrc3FRdykXfysTV7XSm4CeSYx1tHGUQ9t3NrOeVh2ecMmxJbnpif0oZar6omtLzAMvkGsnYP4DOJ98OzIw37nrqdTe0ByzDf-V_ACPxtxt5z7ltKzavpKY3Ql44MJwtbxndR4pgg4Al-FcGokI5L8zFE3Uf8s100NpvoJgZN9KKMnJIwDarpbijsqcOL20cRkhWENfVKipfOCW9o73-wDq_GsXt-9t&key=AIzaSyAqa_-IIG1SE7pPbsIbDtRNPqx-m2JM1oI"
+        ],
+        "place_id": "ChIJQWwK59-Y4jARMzM5lcfA4eU",
+        "rating": 4.2,
+        "recommended_age_group": "ผู้ใหญ่",
+        "review_count": 7157,
+        "types": [
+            "tourist_attraction",
+            "point_of_interest",
+            "establishment"
+        ]
+    },
+    {
+        "address": "23 Soi Cowboy Suite 101, ถ. สุขุมวิท แขวงคลองเตยเหนือ เขตวัฒนา กรุงเทพมหานคร 10110, Thailand",
+        "location": {
+            "lat": 13.737025,
+            "lng": 100.562267
+        },
+        "name": "Bangkok Hangover Tour",
+        "photos": [
+            "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=AeeoHcKKCOdHB3pgGo4VK8TAxKosMgQ8MndKDQdvAEB0cHT644wqlLYGvQKOeyBTEc_uq9M5uRkmoEqDKQmrr266QbtdFW2DoVOv_tQCeOSInmmrlS3dbu-XygNCc0Y5nHA2U7xPQqdkNDK1O3LhpQpnbkhKXZAHBEzWDjImlP3UWauqpr1ZxR9Y4PTHyPiu6UcZwJpegrwYZnoj6G-xNGGujjmOeeavT--TkhocI9QgoV1mra-VAuaYmCHn0vnbKaZ7MB3G8RmbHm-FVzLbcMG8Bfcjcyg_lCLhefzDG3-umPrw8K99GEesT1ZI5EfSvieOGi_CBP86FlYLq0g6miczzy1d6lsMdoHtIq_W8YYGA5pasCZa6t9DW2t-DHkEIEU08ebmLxLnG9m5groScDHWss4j0QJqYRhcGMvfE-OjFYkmgZeIkCq9hXpls4RwWMXnuim3CwfUbdgg9-vl7eE1SS-Cd_5FywZ6ZBg8140nbAr3z4ibtpklI7j_qBjkaSUnfEelHwmAllqcyJBAonNzJp7q5XEBlcmCn3va-u4qH1flQ5F-zM-huqLpramOGnWIaK6PGIKZ&key=AIzaSyAqa_-IIG1SE7pPbsIbDtRNPqx-m2JM1oI"
+        ],
+        "place_id": "ChIJJcJyvOCe4jAR919HSmGAzco",
+        "rating": 4.1,
+        "recommended_age_group": "วัยรุ่น",
+        "review_count": 52,
+        "types": [
+            "tourist_attraction",
+            "travel_agency",
+            "point_of_interest",
+            "establishment"
+        ]
+    }
+]

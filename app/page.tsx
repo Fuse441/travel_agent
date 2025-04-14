@@ -13,15 +13,19 @@ import { useEffect, useState } from "react";
 import { tripService } from "@/config/tripService";
 import { populaar } from "@/config/popularProvince";
 import { MailIcon } from "@/components/icons";
+import { fetchTouristSpots } from "@/service/tourist_spots";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
   const [province, setProvince] = useState<string[]>([]);
-
+  const [selectProvince, setSelectProvince] = useState<string>("");
+  const [selectAge, setSelectAge] = useState<string[]>([]);
+  const router = useRouter();
   useEffect(() => {
     const fetchProvinces = async () => {
       try {
         const response = await fetch(
-          "https://raw.githubusercontent.com/kongvut/thai-province-data/master/api_province.json",
+          "https://raw.githubusercontent.com/kongvut/thai-province-data/master/api_province.json"
         );
         const data = await response.json();
         const provinceNames = data.map((item: any) => item.name_th); // ดึงชื่อจังหวัดภาษาไทย
@@ -67,24 +71,35 @@ export default function Home() {
                 className=" mx-10"
                 label="จุดหมาย"
                 placeholder="เลือกจังหวัด"
+                onSelectionChange={(key: any) =>
+                  setSelectProvince(Array.from(key)[0] as string)
+                }
               >
                 {province.map((item, index) => (
-                  <SelectItem key={index}>{item}</SelectItem>
+                  <SelectItem key={item}>{item}</SelectItem>
                 ))}
               </Select>
               <CheckboxGroup
-                defaultValue={["buenos-aires", "london"]}
                 label="เลือกช่วงอายุ"
+                onValueChange={(value: any) => setSelectAge(value)}
               >
                 <div className="flex flex-row gap-3">
-                  <Checkbox value="buenos-aires">เด็ก</Checkbox>
-                  <Checkbox value="sydney">ผู้ใหญ่</Checkbox>
+                  <Checkbox value="เด็ก">เด็ก</Checkbox>
+                  <Checkbox value="ผู้ใหญ่">ผู้ใหญ่</Checkbox>
                 </div>
               </CheckboxGroup>
             </div>
             <Button
               className="bg-[#FF73AF] text-[#ffff] w-[206px] text-2xl"
+              isDisabled={!selectProvince || selectAge.length === 0}
               size="lg"
+              onPress={async () => {
+                const data = await fetchTouristSpots();
+
+                localStorage.setItem("touristData", JSON.stringify(data));
+                router.push("/recommand");
+                //  console.log(selectAge,selectProvince);
+              }}
             >
               ค้นหา
             </Button>
