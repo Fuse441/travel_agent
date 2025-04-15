@@ -1,7 +1,9 @@
 /* eslint-disable prettier/prettier */
 // services/touristService.ts
-export async function fetchTouristSpots() {
-  const response = await fetch("/mock/tourist_spots.json");
+export async function fetchTouristSpots(age_group:string,province:string) {
+  const response = await fetch(`http://127.0.0.1:5000/tourist_spots?age_group=${age_group}&province=${province}`);
+
+  
 
   if (!response.ok) {
     throw new Error("Failed to fetch tourist spots");
@@ -9,3 +11,4 @@ export async function fetchTouristSpots() {
 
   return await response.json();
 }
+

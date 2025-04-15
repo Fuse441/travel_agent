@@ -9,18 +9,22 @@ import { Card, CardBody } from "@heroui/card";
 import { Input } from "@heroui/input";
 import { Divider } from "@heroui/divider";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 import { tripService } from "@/config/tripService";
 import { populaar } from "@/config/popularProvince";
 import { MailIcon } from "@/components/icons";
 import { fetchTouristSpots } from "@/service/tourist_spots";
-import { useRouter } from "next/navigation";
+import { Breadcrumbs, BreadcrumbItem } from "@heroui/breadcrumbs";
+import Loading from "@/components/loading";
 
 export default function Home() {
   const [province, setProvince] = useState<string[]>([]);
   const [selectProvince, setSelectProvince] = useState<string>("");
   const [selectAge, setSelectAge] = useState<string[]>([]);
+  const [loading, setLoading] = useState<boolean>(false);
   const router = useRouter();
+
   useEffect(() => {
     const fetchProvinces = async () => {
       try {
@@ -28,7 +32,7 @@ export default function Home() {
           "https://raw.githubusercontent.com/kongvut/thai-province-data/master/api_province.json"
         );
         const data = await response.json();
-        const provinceNames = data.map((item: any) => item.name_th); // ดึงชื่อจังหวัดภาษาไทย
+        const provinceNames = data.map((item: any) => item.name_th);
 
         setProvince(provinceNames);
       } catch (error) {
@@ -38,9 +42,11 @@ export default function Home() {
 
     fetchProvinces();
   }, []);
+  
 
   return (
     <div className="flex flex-col ">
+       <Loading status={loading} />
       <section className="flex flex-row items-center justify-center gap-x-[25rem] py-8 md:py-10">
         <div className="flex flex-col ">
           <Chip className="bg-[#FCC2DB] text-[#000] text-[16px]">
@@ -79,25 +85,41 @@ export default function Home() {
                   <SelectItem key={item}>{item}</SelectItem>
                 ))}
               </Select>
-              <CheckboxGroup
-                label="เลือกช่วงอายุ"
-                onValueChange={(value: any) => setSelectAge(value)}
-              >
-                <div className="flex flex-row gap-3">
-                  <Checkbox value="เด็ก">เด็ก</Checkbox>
-                  <Checkbox value="ผู้ใหญ่">ผู้ใหญ่</Checkbox>
-                </div>
-              </CheckboxGroup>
+              <div className="w-[400px]">
+                <p className="mb-2">เลือกช่วงอายุ</p>
+                <CheckboxGroup
+                  label=""
+                  onValueChange={(value: any) => setSelectAge(value)}
+                  className=""
+                >
+                  <div className="flex flex-row gap-3">
+                    <Checkbox value="เด็ก">เด็ก</Checkbox>
+                    <Checkbox value="ผู้สูงอายุ">ผู้สูงอายุ</Checkbox>
+                  </div>
+                </CheckboxGroup>
+              </div>
             </div>
             <Button
               className="bg-[#FF73AF] text-[#ffff] w-[206px] text-2xl"
-              isDisabled={!selectProvince || selectAge.length === 0}
+              isDisabled={!selectProvince}
               size="lg"
               onPress={async () => {
-                const data = await fetchTouristSpots();
+                setLoading(true);
+                const filter = {
+                  age:
+                    selectAge.length == 2 || selectAge.length == 0
+                      ? ["ทุกวัย"]
+                      : selectAge,
+                  province: selectProvince,
+                };
+
+                const data = await fetchTouristSpots("ผู้ใหญ่", selectProvince);
 
                 localStorage.setItem("touristData", JSON.stringify(data));
+                localStorage.setItem("filter", JSON.stringify(filter));
+                
                 router.push("/recommand");
+                // setLoading(false);
                 //  console.log(selectAge,selectProvince);
               }}
             >
