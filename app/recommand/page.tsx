@@ -2,9 +2,7 @@
 
 import { Button } from "@heroui/button";
 import { Card, CardBody } from "@heroui/card";
-import { DateRangePicker } from "@heroui/date-picker";
 import { Input } from "@heroui/input";
-import { getLocalTimeZone, today } from "@internationalized/date";
 import { useEffect, useState } from "react";
 
 // import { RecommandItem } from "@/interface/recommandItem";
@@ -54,6 +52,7 @@ export default function RecommandPage() {
       ...prev,
       [id]: date,
     }));
+   
   };
 
   useEffect(() => {
@@ -85,7 +84,10 @@ export default function RecommandPage() {
         children_number: childCount,
         checkin_date: selectedDates[item.place_id]?.start || "",
         checkout_date: selectedDates[item.place_id]?.end || "",
-        room_type: "ทุกวัย",
+        room_type:
+          childCount && adultCount && !elderlyCount
+            ? "ครอบครัวที่มีเด็ก"
+            : "ทุกวัย",
       }));
 
     try {
@@ -100,9 +102,11 @@ export default function RecommandPage() {
       if (response.ok) {
         const result = await response.json(); // ✅ ดึง JSON ออกมาก่อน
 
-        console.log("Hotel result ==>", result);
-
-        localStorage.setItem("hotels", JSON.stringify(result)); // ✅ เก็บ result แทน
+        // console.log("Hotel result ==>", result);
+      
+        const disabledDates = Object.values(selectedDates)
+        // console.log("selectedDates ==>",disabledDates)
+        localStorage.setItem("hotels", JSON.stringify(result)); 
         router.push("/hotels");
       } else {
         console.warn("Fetch failed with status:", response.status);
@@ -189,6 +193,7 @@ export default function RecommandPage() {
 
               <Button
                 color="primary"
+                isDisabled={!adultCount}
                 onPress={() => {
                   const tempObj = {
                     child: childCount || 0,
@@ -214,7 +219,7 @@ export default function RecommandPage() {
           </h3>
         <div className="flex justify-center">
         
-
+                
           <div className="recommand w-2/3 flex flex-col mt-2">
             {dataRecommand.map((item) => (
               <div key={item.place_id} className="mb-5">
@@ -222,6 +227,7 @@ export default function RecommandPage() {
                   data={item}
                   selected={selectedIndexes.includes(item.place_id)}
                   onDateChange={handleDateChange}
+                  dateHasSelected={selectedDates!}
                   onSelect={() => toggleSelect(item.place_id)}
                 />
               </div>

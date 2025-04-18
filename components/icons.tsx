@@ -111,7 +111,32 @@ export const MoonFilledIcon = ({
     />
   </svg>
 );
-
+export const FailIcon = ({
+  size = 24,
+  width,
+  height,
+  ...props
+}: IconSvgProps) => (
+  <svg
+    aria-hidden="true"
+    fill="none"
+    focusable="false"
+    height={size || height}
+    viewBox="0 0 64 64"
+    width={size || width}
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <circle cx="32" cy="32" fill="#F44336" r="32" />
+    <path
+      d="M22 22L42 42M42 22L22 42"
+      stroke="#ffffff"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="4"
+    />
+  </svg>
+);
 export const SuccessIcon = ({
   size = 24,
   width,

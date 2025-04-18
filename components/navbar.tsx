@@ -17,6 +17,7 @@ import clsx from "clsx";
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 import { GithubIcon, SearchIcon } from "@/components/icons";
+import AuthNav from "./auth";
 
 export const Navbar = () => {
   const searchInput = (
@@ -50,13 +51,13 @@ export const Navbar = () => {
             </p>
           </NextLink>
         </NavbarBrand>
-        <ul className="hidden lg:flex gap-4 justify-start ml-2">
+        <ul className="hidden lg:flex gap-4 ml-2 w-full justify-end items-center">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <NextLink
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium",
+                  "data-[active=true]:text-primary data-[active=true]:font-medium"
                 )}
                 color="foreground"
                 href={item.href}
@@ -65,6 +66,8 @@ export const Navbar = () => {
               </NextLink>
             </NavbarItem>
           ))}
+         <AuthNav />
+
         </ul>
       </NavbarContent>
 

@@ -1,0 +1,55 @@
+/* eslint-disable prettier/prettier */
+"use client";
+import { useEffect, useState } from "react";
+import NextLink from "next/link";
+import clsx from "clsx";
+import { NavbarItem } from "@heroui/navbar";
+
+export default function AuthNav() {
+  const [auth, setAuth] = useState<boolean>(false);
+
+  useEffect(() => {
+    setAuth(!!localStorage.getItem("token"));
+  }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    window.location.reload(); // หรือจะใช้ router.push('/') ก็ได้
+  };
+
+  return (
+    <div className="flex gap-3">
+      {auth ? (
+        <button
+          onClick={handleLogout}
+          className="bg-red-500 text-white font-bold px-4 py-2 rounded"
+        >
+          ออกจากระบบ
+        </button>
+      ) : (
+        <>
+          <NavbarItem key={"login"}>
+            <NextLink
+              className={clsx(
+                "data-[active=true]:text-primary data-[active=true]:font-medium  font-bold",
+              )}
+              href={"/login"}
+            >
+              {"เข้าสู่ระบบ"}
+            </NextLink>
+          </NavbarItem>
+          <NavbarItem key={"register"}>
+            <NextLink
+              className={clsx(
+                "data-[active=true]:text-primary data-[active=true]:font-medium bg-[#3DCBFF]  font-bold",
+              )}
+              href={"/register"}
+            >
+              <p className="text-white">{"สมัครสมาชิก"}</p>
+            </NextLink>
+          </NavbarItem>
+        </>
+      )}
+    </div>
+  );
+}

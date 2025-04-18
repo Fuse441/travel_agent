@@ -15,7 +15,6 @@ import { tripService } from "@/config/tripService";
 import { populaar } from "@/config/popularProvince";
 import { MailIcon } from "@/components/icons";
 import { fetchTouristSpots } from "@/service/tourist_spots";
-import { Breadcrumbs, BreadcrumbItem } from "@heroui/breadcrumbs";
 import Loading from "@/components/loading";
 
 export default function Home() {
@@ -26,6 +25,15 @@ export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
+    const checkToken = () => {
+      setLoading(true)
+      const token = localStorage.getItem("token");
+      if(!token)
+        return router.push("/login")
+
+      setLoading(false)
+    }
+    
     const fetchProvinces = async () => {
       try {
         const response = await fetch(
@@ -41,12 +49,12 @@ export default function Home() {
     };
 
     fetchProvinces();
+    checkToken();
   }, []);
-  
 
   return (
     <div className="flex flex-col ">
-       <Loading status={loading} />
+      <Loading status={loading} />
       <section className="flex flex-row items-center justify-center gap-x-[25rem] py-8 md:py-10">
         <div className="flex flex-col ">
           <Chip className="bg-[#FCC2DB] text-[#000] text-[16px]">
@@ -88,9 +96,9 @@ export default function Home() {
               <div className="w-[400px]">
                 <p className="mb-2">เลือกช่วงอายุ</p>
                 <CheckboxGroup
+                  className=""
                   label=""
                   onValueChange={(value: any) => setSelectAge(value)}
-                  className=""
                 >
                   <div className="flex flex-row gap-3">
                     <Checkbox value="เด็ก">เด็ก</Checkbox>
@@ -117,7 +125,6 @@ export default function Home() {
 
                 localStorage.setItem("touristData", JSON.stringify(data));
                 localStorage.setItem("filter", JSON.stringify(filter));
-                
                 router.push("/recommand");
                 // setLoading(false);
                 //  console.log(selectAge,selectProvince);
