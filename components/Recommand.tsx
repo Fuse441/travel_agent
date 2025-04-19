@@ -10,41 +10,16 @@ export default function RecommandCard({
   data,
   selected,
   onSelect,
-  dateHasSelected,
+ 
   onDateChange, 
 }: {
   data: RecommandItem;
   selected: boolean;
   onSelect: () => void;
-  dateHasSelected: Record<string,any>
+ 
   onDateChange: (id: string, date: { start: string; end: string }) => void;
 }) 
 {
-  
-  const disabledRanges = Object.entries(dateHasSelected)
-  .filter(([_, range]) => range.start) 
-  .map(([key, range]) => ({
-    key,
-    start: parseDate(range.start),
-    end: range.end ? parseDate(range.end) : null
-  }));
-
-const isDateUnavailable = (date: DateValue,currentKey: string) => {
- 
-  return disabledRanges.some(disabledDate => {
-    if (disabledDate.key === currentKey || !disabledDate.start) {
-      return false;
-    }
-
-    if (disabledDate.start && disabledDate.end) {
-      // เช็คว่า date อยู่ในช่วง start ถึง end
-      return date >= disabledDate.start && date <= disabledDate.end;
-    }
-
-    // ถ้ามีแค่ start อย่างเดียว
-    return isEqualDay(date, disabledDate.start);
-  });
-};
   return (
     <div
       className="border-2 border-solid flex gap-5 rounded-xl"
@@ -88,7 +63,6 @@ const isDateUnavailable = (date: DateValue,currentKey: string) => {
             className="max-w-xs"
             minValue={today(getLocalTimeZone())}
             isDisabled={!selected}
-            isDateUnavailable={(date) => isDateUnavailable(date, data.place_id)}
             onChange={(range) => {
               if (range?.start && range?.end) {
                 onDateChange(data.place_id, {

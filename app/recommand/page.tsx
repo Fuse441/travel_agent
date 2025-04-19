@@ -182,6 +182,7 @@ export default function RecommandPage() {
                     <Input
                       className="max-w-xs"
                       defaultValue="0"
+                      maxLength={1}
                       type="number"
                       onValueChange={(value: any) =>
                         setElderlyCount(Number(value))
@@ -193,7 +194,7 @@ export default function RecommandPage() {
 
               <Button
                 color="primary"
-                isDisabled={!adultCount}
+                isDisabled={childCount && (adultCount || elderlyCount) ? false : true}
                 onPress={() => {
                   const tempObj = {
                     child: childCount || 0,
@@ -227,7 +228,7 @@ export default function RecommandPage() {
                   data={item}
                   selected={selectedIndexes.includes(item.place_id)}
                   onDateChange={handleDateChange}
-                  dateHasSelected={selectedDates!}
+              
                   onSelect={() => toggleSelect(item.place_id)}
                 />
               </div>

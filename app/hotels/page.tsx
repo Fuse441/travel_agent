@@ -134,9 +134,10 @@ export default function HotelPage() {
                     </>
                   )}
                 </div>
-
+                  {"select ==>"+String(Object.keys(summery).length)+"hotel"+String(hotels.length)}
                 <Button
                   color="primary"
+                  isDisabled={!(Object.keys(summery).length == hotels.length)}
                   onPress={() => {
                     console.log(summery);
                     setReceiptOpen(true);

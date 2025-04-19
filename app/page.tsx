@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 import { Chip } from "@heroui/chip";
@@ -26,18 +27,17 @@ export default function Home() {
 
   useEffect(() => {
     const checkToken = () => {
-      setLoading(true)
+      setLoading(true);
       const token = localStorage.getItem("token");
-      if(!token)
-        return router.push("/login")
+      if (!token) return router.push("/login");
 
-      setLoading(false)
-    }
-    
+      setLoading(false);
+    };
+
     const fetchProvinces = async () => {
       try {
         const response = await fetch(
-          "https://raw.githubusercontent.com/kongvut/thai-province-data/master/api_province.json"
+          "https://raw.githubusercontent.com/kongvut/thai-province-data/master/api_province.json",
         );
         const data = await response.json();
         const provinceNames = data.map((item: any) => item.name_th);
@@ -80,11 +80,15 @@ export default function Home() {
         >
           <div className="flex flex-row w-full justify-between">
             <div className="flex w-1/3">
+
               <Select
+                size="lg"
                 isVirtualized
-                className=" mx-10"
-                label="จุดหมาย"
+                className="mx-10 text-[#0000]"
+                label="เลือกจุดหมายปลายทางของคุณ"
                 placeholder="เลือกจังหวัด"
+                labelPlacement="outside"
+
                 onSelectionChange={(key: any) =>
                   setSelectProvince(Array.from(key)[0] as string)
                 }
