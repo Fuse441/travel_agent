@@ -41,7 +41,7 @@ export default function LoginPage() {
       }
       
       const result = await response.json();
-      localStorage.setItem("token", JSON.stringify(result));
+      localStorage.setItem("token", JSON.stringify(result.result));
       route.push("/")
     } catch (error) {
       console.error("Unexpected error during login:", error);

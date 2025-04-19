@@ -16,7 +16,7 @@ export default function Loading({
       setTimeoutReached(false); 
       timer = setTimeout(() => {
         setTimeoutReached(true);
-      }, 15000);
+      }, 30000);
     }
 
     return () => clearTimeout(timer); 

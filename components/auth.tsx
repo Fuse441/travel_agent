@@ -4,28 +4,39 @@ import { useEffect, useState } from "react";
 import NextLink from "next/link";
 import clsx from "clsx";
 import { NavbarItem } from "@heroui/navbar";
+import { Avatar } from "@heroui/avatar";
+import { Link } from "@heroui/link";
+import { useRouter } from "next/navigation";
 
 export default function AuthNav() {
   const [auth, setAuth] = useState<boolean>(false);
-
+  const router = useRouter();
   useEffect(() => {
     setAuth(!!localStorage.getItem("token"));
   }, []);
 
   const handleLogout = () => {
     localStorage.removeItem("token");
-    window.location.reload(); // หรือจะใช้ router.push('/') ก็ได้
+    router.push('/')  // หรือจะใช้ router.push('/') ก็ได้
   };
 
   return (
     <div className="flex gap-3">
       {auth ? (
-        <button
+        <div className="flex gap-3">
+            <button
           onClick={handleLogout}
           className="bg-red-500 text-white font-bold px-4 py-2 rounded"
         >
           ออกจากระบบ
         </button>
+        <Link 
+        href="/profile">
+        <Avatar showFallback className="cursor-pointer"  src="https://images.unsplash.com/broken" />
+
+        </Link>
+        </div>
+        
       ) : (
         <>
           <NavbarItem key={"login"}>

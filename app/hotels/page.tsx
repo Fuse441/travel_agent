@@ -95,7 +95,7 @@ export default function HotelPage() {
               </div> */}
                 <div>
                   {!["เด็ก", "ทุกวัย"].some((age) =>
-                    filter.age?.includes(age)
+                    filter.age?.includes(age),
                   ) ? undefined : (
                     <>
                       <h1 className="text-base">เด็ก</h1>
@@ -120,7 +120,7 @@ export default function HotelPage() {
                 </div>
                 <div>
                   {!["ผู้สูงอายุ", "ทุกวัย"].some((age) =>
-                    filter.age?.includes(age)
+                    filter.age?.includes(age),
                   ) ? undefined : (
                     <>
                       <h1 className="text-base">ผู้สูงอายุ</h1>
@@ -134,7 +134,6 @@ export default function HotelPage() {
                     </>
                   )}
                 </div>
-                  {"select ==>"+String(Object.keys(summery).length)+"hotel"+String(hotels.length)}
                 <Button
                   color="primary"
                   isDisabled={!(Object.keys(summery).length == hotels.length)}
@@ -218,7 +217,7 @@ export default function HotelPage() {
                                       (obj) =>
                                         obj.bookingInfo?.touristSpot ===
                                           item.name &&
-                                        obj.bookingInfo?.name === hotel.name
+                                        obj.bookingInfo?.name === hotel.name,
                                     )
                                       ? "secondary"
                                       : "primary"
@@ -229,6 +228,7 @@ export default function HotelPage() {
                                       price: hotel.price,
                                       image: hotel.photos,
                                     };
+
                                     selectHotel(item.name, obj);
                                     console.log(summery);
                                   }}
@@ -237,7 +237,7 @@ export default function HotelPage() {
                                     (obj) =>
                                       obj.bookingInfo?.touristSpot ===
                                         item.name &&
-                                      obj.bookingInfo?.name === hotel.name
+                                      obj.bookingInfo?.name === hotel.name,
                                   )
                                     ? "เลือกแล้ว"
                                     : "เลือกที่นี่"}

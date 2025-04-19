@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Modal,
   ModalContent,
@@ -23,6 +23,17 @@ export default function Receipt({
   onClose: () => void;
 }) {
   const [selectedItems, setSelectedItems] = useState<{ [key: string]: any }>({});
+  const [username,setUsername] = useState<string>("")
+  useEffect(() => {
+    const token = localStorage.getItem("token")
+    setUsername(JSON.parse(token!).username)
+  },[]);
+  useEffect(() => {
+    if (receiptOpen) {
+      setSelectedItems({});
+      setDialog(false);
+    }
+  }, [receiptOpen]);
   const groupedByDate = data.reduce((acc: any, item: any) => {
     const key = `${item.bookingInfo.start}-${item.bookingInfo.end}`;
     if (!acc[key]) acc[key] = [];
@@ -40,7 +51,13 @@ export default function Receipt({
     const key = `${item.bookingInfo.start}-${item.bookingInfo.end}`;
     return uniqueDateKeys.includes(key);
   });
+  const groupsWithChoices = Object.entries(groupedByDate).filter(
+    ([_, items]: any) => items.length > 1
+  );
   
+  const allChoicesMade = groupsWithChoices.every(
+    ([key]) => selectedItems[key]
+  );
   const totalPrice = [
     ...filtered,
     ...Object.values(selectedItems) // เฉพาะรายการที่ user เลือก
@@ -49,6 +66,31 @@ export default function Receipt({
     return sum + (isNaN(price) ? 0 : price);
   }, 0);
   const [openDialog, setDialog] = useState(false);
+  const saveData = async (selected:Record<string,any>[]) => {
+    const send = {
+      username :  username,
+      details : selected.map((item:any) => item.bookingInfo)
+    }
+    try {
+      const response = await fetch("http://127.0.0.1:5000/api/users/details",{
+        method : "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body :  JSON.stringify(send)
+        
+      })
+      if(!response.ok)
+        return "Server error!"
+
+       onClose();
+       setDialog(true);
+      
+    } catch (error) {
+      throw error
+    }
+   
+  }
   const message = {
     header: "จองสำเร็จแล้ว",
     body: "ระบบได้บันทึกข้อมูลของคุณเรียบร้อยแล้ว",
@@ -145,9 +187,16 @@ export default function Receipt({
                 <Button
                   color="primary"
                   className="w-full"
+                  isDisabled={!allChoicesMade}
                   onPress={() => {
-                    onClose();
-                    setDialog(true);
+                    const selected = [
+                      ...filtered, // พวกที่มีรายการเดียว
+                      ...Object.values(selectedItems), // พวกที่ user เลือกผ่าน radio
+                    ];
+                    saveData(selected)
+                    // console.log("รายการที่เลือก:", selected);
+                    // onClose();
+                    // setDialog(true);
                   }}
                 >
                   ยืนยันแผนการเดินทาง
