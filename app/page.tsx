@@ -23,14 +23,17 @@ export default function Home() {
   const [selectProvince, setSelectProvince] = useState<string>("");
   const [selectAge, setSelectAge] = useState<string[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
+  const [userData,setUserData] = useState<any>("");
   const router = useRouter();
 
   useEffect(() => {
+    
     const checkToken = () => {
       setLoading(true);
       const token = localStorage.getItem("token");
       if (!token) return router.push("/login");
 
+      setUserData(JSON.parse(token!))
       setLoading(false);
     };
 
@@ -57,16 +60,34 @@ export default function Home() {
       <Loading status={loading} />
       <section className="flex flex-row items-center justify-center gap-x-[25rem] py-8 md:py-10">
         <div className="flex flex-col ">
-          <Chip className="bg-[#FCC2DB] text-[#000] text-[16px]">
+          {
+            userData.age >= 60 ? (
+                <div>
+                        <Chip className="bg-[#AAE8FF] text-[#000] text-[16px]">
+                        สำรวจสถานที่สำหรับการพักผ่อนของผู้สูงวัย
+          </Chip>
+          <h3 className="whitespace-pre-line text-[48px] font-bold">
+            {`เริ่มต้นช่วงเวลาดี ๆ\nเพื่อสุขภาพกายใจ...วันนี้เลย`}
+          </h3>
+          <p>เก็บเกี่ยวความทรงจำดี ๆ ให้ทุกการเดินทางเป็นความทรงจำที่ไม่ลืม</p>
+                </div>
+            ) : (
+                <div>
+                    <Chip className="bg-[#FCC2DB] text-[#000] text-[16px]">
             Explore Thailand
           </Chip>
           <h3 className="whitespace-pre-line text-[48px]">
             {`Experience\nmemorablemoments\ntoday`}
           </h3>
           <p>เก็บเกี่ยวความทรงจำดี ๆ ให้ทุกการเดินทางเป็นความทรงจำที่ไม่ลืม</p>
-        </div>
+
+                </div>
+            )
+          }
+          </div>
+        
         <div className="">
-          <Image alt="" src="landing/logo_landing_page.png" width={300} />
+          <Image alt="" src={userData.age >= 60 ? "landing/logo_landing_page2.png" : "landing/logo_landing_page.png"} width={300} />
         </div>
       </section>
 
@@ -112,7 +133,7 @@ export default function Home() {
               </div>
             </div>
             <Button
-              className="bg-[#FF73AF] text-[#ffff] w-[206px] text-2xl"
+              className={`${userData.age >= 60 ? "bg-[#FEBC9D] text-[#000]" : "bg-[#FF73AF] text-[#ffff]"}  w-[206px] text-2xl font-bold`}
               isDisabled={!selectProvince}
               size="lg"
               onPress={async () => {
@@ -196,7 +217,7 @@ export default function Home() {
 
       <section className="contact px-8 py-12">
         <Card>
-          <CardBody className="h-[323px] flex justify-center items-center gap-y-10 bg-[url(/bg_contact.png)] bg-[#FACD49]">
+          <CardBody className={`h-[323px] flex justify-center items-center gap-y-10 bg-[url(/bg_contact.png)]  ${userData.age >= 60 ? "bg-[#FFE2D5]" : "bg-[#FACD49]"}`}>
             <div className="">
               <h3 className="text-5xl font-bold">รับข่าวสารและโปรโมชั่น</h3>
             </div>
