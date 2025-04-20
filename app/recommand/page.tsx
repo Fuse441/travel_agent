@@ -195,7 +195,7 @@ export default function RecommandPage() {
 
               <Button
                 color="primary"
-                isDisabled={childCount && (adultCount || elderlyCount) ? false : true}
+                isDisabled={childCount || (adultCount || elderlyCount) ? false : true}
                 onPress={() => {
                   const tempObj = {
                     child: childCount || 0,
@@ -222,19 +222,23 @@ export default function RecommandPage() {
         <div className="flex justify-center">
         
                 
-          <div className="recommand w-2/3 flex flex-col mt-2">
-            {dataRecommand.map((item) => (
-              <div key={item.place_id} className="mb-5">
-                <RecommandCard
-                  data={item}
-                  selected={selectedIndexes.includes(item.place_id)}
-                  onDateChange={handleDateChange}
-              
-                  onSelect={() => toggleSelect(item.place_id)}
-                />
-              </div>
-            ))}
-          </div>
+        <div className="recommand w-2/3 flex flex-col mt-2">
+  {dataRecommand.length === 0 ? (
+    <div>ไม่พบสถานที่ท่องเที่ยว</div>
+  ) : (
+    dataRecommand.map((item) => (
+      <div key={item.place_id} className="mb-5">
+        <RecommandCard
+          data={item}
+          selected={selectedIndexes.includes(item.place_id)}
+          onDateChange={handleDateChange}
+          onSelect={() => toggleSelect(item.place_id)}
+        />
+      </div>
+    ))
+  )}
+</div>
+
         </div>
       </section>
     </div>
