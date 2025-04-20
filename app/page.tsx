@@ -105,7 +105,10 @@ export default function Home() {
               <Select
                 size="lg"
                 isVirtualized
-                className="mx-10 text-[#0000]"
+                className="mx-10"
+                classNames={{
+                  label: "text-lg"
+                }}
                 label="เลือกจุดหมายปลายทางของคุณ"
                 placeholder="เลือกจังหวัด"
                 labelPlacement="outside"
