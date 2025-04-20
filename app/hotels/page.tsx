@@ -135,9 +135,12 @@ export default function HotelPage() {
                     </>
                   )}
                 </div>
+                {/* {JSON.stringify(hotels[1].hotels)} */}
                 <Button
                   color="primary"
-                  isDisabled={!(Object.keys(summery).length == hotels.length)}
+                  isDisabled={
+                    !(Object.keys(summery).length == (hotels.filter((item: any) => item.hotels?.length > 0).length))
+                  }
                   onPress={() => {
                     console.log(summery);
                     setReceiptOpen(true);
