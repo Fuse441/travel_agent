@@ -61,24 +61,33 @@ export default function ProfilePage() {
             <TableColumn className="text-lg" >ราคา</TableColumn>
           </TableHeader>
           <TableBody>
-            {userData.result.map((item: any, idx: number) => (
-              <TableRow key={idx}>
-                <TableCell>
-                  <img
-                    src={item.image}
-                    alt="preview"
-                    className="w-20 h-16 rounded object-cover"
-                  />
-                </TableCell>
-                <TableCell>{item.touristSpot}</TableCell>
-                <TableCell>{item.name}</TableCell>
-                <TableCell>
-                  {item.start} - {item.end}
-                </TableCell>
-                <TableCell>{parseFloat(item.price).toFixed(2)} บาท</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
+  {!userData.result ? (
+    <TableRow>
+      <TableCell colSpan={5} className="text-center text-gray-500">
+        ไม่พบข้อมูล
+      </TableCell>
+    </TableRow>
+  ) : (
+    userData.result.map((item: any, idx: number) => (
+      <TableRow key={idx}>
+        <TableCell>
+          <img
+            src={item.image}
+            alt="preview"
+            className="w-20 h-16 rounded object-cover"
+          />
+        </TableCell>
+        <TableCell>{item.touristSpot}</TableCell>
+        <TableCell>{item.name}</TableCell>
+        <TableCell>
+          {item.start} - {item.end}
+        </TableCell>
+        <TableCell>{parseFloat(item.price).toFixed(2)} บาท</TableCell>
+      </TableRow>
+    ))
+  )}
+</TableBody>
+
         </Table>
       </div>
     </div>

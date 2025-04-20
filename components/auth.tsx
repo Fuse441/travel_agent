@@ -19,9 +19,9 @@ export default function AuthNav() {
 
   const handleLogout = () => {
     localStorage.removeItem("token");
-    
-    router.push('/') 
-    window.location.reload(); // หรือจะใช้ router.push('/') ก็ได้
+    setLoading(true)
+    router.push('/login') 
+    // window.location.reload(); 
   };
 
   // useEffect(() => {
