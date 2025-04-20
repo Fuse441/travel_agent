@@ -206,9 +206,9 @@ export default function HotelPage() {
                             <CardFooter>
                               <div className="w-full flex justify-between">
                                 <div className="text-xl flex gap-3">
-                                  From{" "}
+                                  เริ่มต้น {" "}
                                   <p className="text-[#FF6B6B]">
-                                    ${hotel.price}
+                                    {hotel.price} บาท
                                   </p>
                                 </div>
                                 <Button

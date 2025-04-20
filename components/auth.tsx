@@ -7,10 +7,12 @@ import { NavbarItem } from "@heroui/navbar";
 import { Avatar } from "@heroui/avatar";
 import { Link } from "@heroui/link";
 import { useRouter } from "next/navigation";
+import Loading from "./loading";
 
 export default function AuthNav() {
   const [auth, setAuth] = useState<boolean>(false);
   const router = useRouter();
+  const [loading,setLoading] = useState<boolean>(false);
   useEffect(() => {
     setAuth(!!localStorage.getItem("token"));
   }, []);
@@ -22,6 +24,10 @@ export default function AuthNav() {
     window.location.reload(); // หรือจะใช้ router.push('/') ก็ได้
   };
 
+  // useEffect(() => {
+  //   loading ? 
+  // }
+  // },[loading])
   return (
     <div className="flex gap-3">
       {auth ? (
@@ -32,7 +38,9 @@ export default function AuthNav() {
         >
           ออกจากระบบ
         </button>
-        <Link 
+        <Link onClick={() => {
+            setLoading(true)
+        }}
         href="/profile">
         <Avatar showFallback className="cursor-pointer"  src="https://images.unsplash.com/broken" />
 

@@ -4,6 +4,7 @@ import {  Modal,  ModalContent,  ModalHeader,  ModalBody,  ModalFooter, useDiscl
 import { Button } from '@heroui/button';
 import { FailIcon, SuccessIcon } from './icons';
 import { useRouter } from 'next/navigation';
+import { Link } from '@heroui/link';
 export default function Dialog({
     modal,
     dialogOpen,
@@ -33,12 +34,21 @@ export default function Dialog({
                    ) :<div>
                    <SuccessIcon size={150} className="text-green-500"/>
             </div>}
-                <p className='font-bold'>{ modal.body || "ดำเนินการสำเร็จ"}</p>
+                <p className='font-bold whitespace-pre-line text-center'>{ modal.body || "ดำเนินการสำเร็จ"}</p>
+                {
+                  modal.redirect ? (
+                      <Link className='cursor-pointer' onClick={() => {
+                        window.open(modal.redirect)
+                      }}>แบบประเมินความพึงพอใจ</Link>
+                  ) : (undefined)
+                } 
                 </div>
             </ModalBody>
             <ModalFooter>
                 <div className='flex justify-center items-center w-full'>
+                  
                 <Button color="primary" onPress={() => {
+                
                      modal.route == "current" ? onClose() : route.push(modal.route || "/")
                 }}>
                 {modal.btnMessage || "กลับหน้าหลัก"}

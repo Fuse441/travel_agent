@@ -63,7 +63,7 @@ export default function Home() {
           {
             userData.age >= 60 ? (
                 <div>
-                        <Chip className="bg-[#AAE8FF] text-[#000] text-[16px]">
+                        <Chip className="bg-[#AAE8FF] text-[#000] text-[18px]">
                         สำรวจสถานที่สำหรับการพักผ่อนของผู้สูงวัย
           </Chip>
           <h3 className="whitespace-pre-line text-[48px] font-bold">
@@ -77,7 +77,7 @@ export default function Home() {
             Explore Thailand
           </Chip>
           <h3 className="whitespace-pre-line text-[48px]">
-            {`Experience\nmemorablemoments\ntoday`}
+            {`Experience\nmemorable moments\ntoday`}
           </h3>
           <p>เก็บเกี่ยวความทรงจำดี ๆ ให้ทุกการเดินทางเป็นความทรงจำที่ไม่ลืม</p>
 
@@ -145,13 +145,17 @@ export default function Home() {
                       : selectAge,
                   province: selectProvince,
                 };
-
-                const data = await fetchTouristSpots("ผู้ใหญ่", selectProvince);
+                let paramAge = selectAge.length == 2 ? "เด็กและผู้สูงอายุ" : ""
+                if(selectAge.length != 2){
+                    paramAge = selectAge[0];
+                }  
+                console.log("paramAge ==> ", paramAge,selectAge.length);
+                const data = await fetchTouristSpots(paramAge, selectProvince);
 
                 localStorage.setItem("touristData", JSON.stringify(data));
                 localStorage.setItem("filter", JSON.stringify(filter));
                 router.push("/recommand");
-                // setLoading(false);
+                setLoading(false);
                 //  console.log(selectAge,selectProvince);
               }}
             >

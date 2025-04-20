@@ -95,6 +95,7 @@ export default function Receipt({
     header: "จองสำเร็จแล้ว",
     body: "ระบบได้บันทึกข้อมูลของคุณเรียบร้อยแล้ว",
     buttonMessage: "กลับหน้าหลัก",
+    redirect : "https://forms.gle/B7nBMn67Y6yuYBu4A"
   };
 
   return (

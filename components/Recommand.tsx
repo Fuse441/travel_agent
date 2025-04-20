@@ -44,7 +44,7 @@ export default function RecommandCard({
 
       <div className="flex-1 p-4">
         <div className="flex items-center gap-2">
-          <h2 className="font-semibold text-lg">{data.name}</h2>
+          <h2 className="font-semibold text-lg text-start">{data.name}</h2>
           <span className="text-xs bg-pink-200 text-pink-800 px-2 py-0.5 rounded-full">
             {data.recommended_age_group}
           </span>

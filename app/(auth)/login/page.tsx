@@ -31,7 +31,7 @@ export default function LoginPage() {
         console.log("errorData ==> ", errorData);
         setDialogMessage({
           header: "เข้าสู่ระบบ",
-          body: errorData.developerMessage,
+          body: errorData.detail,
           btnMessage: "ตกลง",
           icon: "Fail",
           route : "current"
