@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 "use client";
 
 import { Accordion, AccordionItem } from "@heroui/accordion";
@@ -165,8 +166,8 @@ export default function HotelPage() {
                         isBlurred
                         isZoomed
                         alt="HeroUI hero Image"
-                        fallbackSrc="/no_image.jpg"
-                        src={item.photos}
+                         fallbackSrc="/no_image.jpg"
+                        src={item.photos ? item.photos : "/no_image.jpg"}
                         width={300}
                       />
                     }
@@ -226,7 +227,7 @@ export default function HotelPage() {
                                     const obj = {
                                       name: hotel.name,
                                       price: hotel.price,
-                                      image: hotel.photos,
+                                      image: item.photos,
                                     };
 
                                     selectHotel(item.name, obj);

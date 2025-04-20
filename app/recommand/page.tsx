@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 "use client";
 
 import { Button } from "@heroui/button";
@@ -102,7 +103,7 @@ export default function RecommandPage() {
       if (response.ok) {
         const result = await response.json(); // ✅ ดึง JSON ออกมาก่อน
 
-        // console.log("Hotel result ==>", result);
+        console.log("Hotel result ==>", result);
       
         const disabledDates = Object.values(selectedDates)
         // console.log("selectedDates ==>",disabledDates)

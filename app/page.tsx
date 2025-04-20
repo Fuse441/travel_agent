@@ -148,14 +148,17 @@ export default function Home() {
                 let paramAge = selectAge.length == 2 ? "เด็กและผู้สูงอายุ" : ""
                 if(selectAge.length != 2){
                     paramAge = selectAge[0];
-                }  
+                }
+                if(selectAge.length == 0) {
+                  paramAge = "ทุกวัย"
+                }
                 console.log("paramAge ==> ", paramAge,selectAge.length);
                 const data = await fetchTouristSpots(paramAge, selectProvince);
 
                 localStorage.setItem("touristData", JSON.stringify(data));
                 localStorage.setItem("filter", JSON.stringify(filter));
                 router.push("/recommand");
-                setLoading(false);
+                // setLoading(false);
                 //  console.log(selectAge,selectProvince);
               }}
             >
